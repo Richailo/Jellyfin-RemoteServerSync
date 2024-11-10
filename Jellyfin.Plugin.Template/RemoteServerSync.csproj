@@ -1,11 +1,29 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>Jellyfin.Plugin.RemoteServerSync</AssemblyName>
     <RootNamespace>Jellyfin.Plugin.RemoteServerSync</RootNamespace>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
+
   <ItemGroup>
+    <!-- Referencje do bibliotek Jellyfin -->
+    <PackageReference Include="MediaBrowser.Common" Version="10.8.0" />
+    <PackageReference Include="MediaBrowser.Controller" Version="10.8.0" />
+    <PackageReference Include="MediaBrowser.Model" Version="10.8.0" />
+    <PackageReference Include="MediaBrowser.Server.Implementations" Version="10.8.0" />
+
+    <!-- Ogólne biblioteki .NET -->
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="6.0.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <!-- Plik manifestu -->
+    <None Update="manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
