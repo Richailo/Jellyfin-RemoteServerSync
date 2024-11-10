@@ -1,0 +1,3 @@
+name: Jellyfin Remote Server Sync
+version: 1.0.0
+description: A plugin for synchronizing users and libraries between Jellyfin servers.
