@@ -1,15 +1,8 @@
 {
     "guid": "eb5d7894-8eef-4b36-aa6f-5d124e828ce1",
-    "name": "Remote Server Sync",
-    "category": "General",
-    "version": "0.0.2",
+    "name": "RemoteServerSync",
+    "overview": "Synchronizes one Jellyfin server with others and allows streaming from connected servers.",
     "description": "Synchronizes one Jellyfin server with others and allows streaming from connected servers.",
-    "plugin": "bin/Release/net6.0/Jellyfin.Plugin.RemoteServerSync.dll",
-    "homepage": "https://github.com/Richailo/Jellyfin-RemoteServerSync",
-    "icon": "https://github.com/Richailo/Jellyfin-RemoteServerSync/blob/main/icon.png",
-    "targetAbi": "10.8.0.0",
-    "authors": [
-      "Richailo"
-    ],
-    "owner": "Richailo"
+    "owner": "Richailo",
+    "category": "General"
   }
